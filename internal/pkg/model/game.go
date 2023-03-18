@@ -8,7 +8,10 @@ import (
 
 type Game struct {
 	gorm.Model
-	Date   time.Time `gorm:"uniqueIndex:idx_game;not null"`
-	AwayID uint
-	HomeID uint `gorm:"uniqueIndex:idx_game;not null"`
+	Season        string    `gorm:"index:,unique,composite:idx_game"`
+	Date          time.Time `gorm:"index:,unique,composite:idx_game"`
+	AwayTeam      string    `gorm:"not null"`
+	HomeTeam      string    `gorm:"index:,unique,composite:idx_game"`
+	AwayTeamScore int       `gorm:"not null"`
+	HomeTeamScore int       `gorm:"not null"`
 }

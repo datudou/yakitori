@@ -14,6 +14,7 @@ import (
 type Handler struct {
 	TeamService   service.TeamService
 	PlayerService service.PlayerService
+	GameService   service.GameService
 }
 
 // Config will hold services that will eventually be injected into this
@@ -22,6 +23,7 @@ type Config struct {
 	R               *gin.Engine
 	TeamService     service.TeamService
 	PlayerService   service.PlayerService
+	GameService     service.GameService
 	TimeoutDuration time.Duration
 }
 
@@ -31,6 +33,7 @@ func NewHandler(c *Config) {
 	h := &Handler{
 		TeamService:   c.TeamService,
 		PlayerService: c.PlayerService,
+		GameService:   c.GameService,
 	}
 
 	log := logrus.New()
@@ -42,6 +45,8 @@ func NewHandler(c *Config) {
 	{
 		g.GET("/teams/:league", h.GetTeams)
 		g.GET("/team/:id", h.GetTeamByID)
-		g.GET("team/:id/players", h.GetPlayersByTeamID)
+		g.GET("/team/:id/players", h.GetPlayersByTeamID)
+		g.GET("/game/:id/gamelog", h.GetGameLogByGameID)
+		g.GET("/games/:date", h.GetGamesByDate)
 	}
 }

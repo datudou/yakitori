@@ -16,19 +16,19 @@ import (
 	"gorm.io/gorm"
 )
 
-type initData struct {
+type dataInitial struct {
 	PR repo.PlayerRepo
 	TR repo.TeamRepo
 }
 
-func NewInitalData(db *gorm.DB) *initData {
-	return &initData{
+func NewDataInitial(db *gorm.DB) *dataInitial {
+	return &dataInitial{
 		PR: repo.NewPlayerRepo(db),
 		TR: repo.NewTeamRepo(db),
 	}
 }
 
-func (id *initData) initPlayerData() error {
+func (di *dataInitial) initPlayerData() error {
 	dirPath := "./assets/nba-player-data"
 	files, err := utils.ReadDir(dirPath)
 	if err != nil {
@@ -55,7 +55,7 @@ func (id *initData) initPlayerData() error {
 		var result []jsonRead
 		json.Unmarshal(byteValute, &result)
 		for _, r := range result {
-			team, err := id.TR.GetTeamByCode(context.Background(), strings.ToUpper(r.Team))
+			team, err := di.TR.GetTeamByCode(context.Background(), strings.ToUpper(r.Team))
 			if err != nil {
 				return err
 			}
@@ -67,8 +67,7 @@ func (id *initData) initPlayerData() error {
 				Position: r.Pos,
 				Age:      r.Age,
 			}
-			fmt.Printf("player: %v", player)
-			_, err = id.PR.CreatePlayer(context.Background(), player)
+			_, err = di.PR.CreatePlayer(context.Background(), player)
 			if err != nil {
 				return err
 			}
@@ -77,7 +76,7 @@ func (id *initData) initPlayerData() error {
 	return nil
 }
 
-func (id *initData) initTeamData() error {
+func (di *dataInitial) initTeamData() error {
 	dirPath := "./assets/team-meta-data"
 	files, err := utils.ReadDir(dirPath)
 	if err != nil {
@@ -98,7 +97,7 @@ func (id *initData) initTeamData() error {
 		var teams []model.Team
 		json.Unmarshal(byteValute, &teams)
 		for _, team := range teams {
-			err = id.TR.CreateTeam(context.Background(), team)
+			err = di.TR.CreateTeam(context.Background(), team)
 			if err != nil {
 				return err
 			}

@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/new-pop-corn/internal/pkg/migration"
-	"gorm.io/driver/postgres"
+	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 )
@@ -26,8 +26,8 @@ func SetupConn() error {
 		},
 	)
 
-	dsn := "host=localhost user=kenyiwang dbname=popcorn port=5432 sslmode=disable TimeZone=UTC"
-	db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{
+	dsn := "root:@tcp(127.0.0.1:3306)/popcorn?charset=utf8mb4&parseTime=True"
+	db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{
 		Logger: newLogger,
 	})
 	if err != nil {

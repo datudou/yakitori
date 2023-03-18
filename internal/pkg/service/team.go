@@ -24,11 +24,7 @@ func NewTeamService(tr repo.TeamRepo) TeamService {
 }
 
 func (ts *teamService) GetTeamByName(ctx context.Context, teamName string) (*model.Team, error) {
-	product, err := ts.TeamRepository.GetTeamByName(ctx, teamName)
-	if err != nil {
-		return nil, err
-	}
-	return product, nil
+	return ts.TeamRepository.GetTeamByName(ctx, teamName)
 }
 
 func (ts *teamService) GetTeamByID(ctx context.Context, teamID uint) (*model.Team, error) {

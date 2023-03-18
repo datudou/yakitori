@@ -24,11 +24,7 @@ func NewPlayerService(pr repo.PlayerRepo) PlayerService {
 }
 
 func (ps *playerService) GetPlayersByTeamID(ctx context.Context, teamID uint) (*model.Player, error) {
-	product, err := ps.PlayerRepo.GetPlayersByTeamID(ctx, teamID)
-	if err != nil {
-		return nil, err
-	}
-	return product, nil
+	return ps.PlayerRepo.GetPlayersByTeamID(ctx, teamID)
 }
 
 func (ps *playerService) GetPlayers(ctx context.Context, league string) ([]*model.Player, error) {

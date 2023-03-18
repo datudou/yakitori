@@ -9,7 +9,7 @@ import (
 
 type PlayerRepo interface {
 	GetPlayersByTeamID(ctx context.Context, teamID uint) (*model.Player, error)
-	// GetPlayerByGame(ctx context.Context, gameID uint) (*model.Player, error)
+	GetPlayerByName(ctx context.Context, playerName string) (*model.Player, error)
 	GetPlayers(ctx context.Context, league string) ([]*model.Player, error)
 	CreatePlayer(ctx context.Context, player model.Player) (*model.Player, error)
 }
@@ -22,6 +22,15 @@ func NewPlayerRepo(db *gorm.DB) PlayerRepo {
 	return &playerRepo{
 		DB: db,
 	}
+}
+
+func (pr *playerRepo) GetPlayerByName(ctx context.Context, playerName string) (*model.Player, error) {
+	var player model.Player
+	err := pr.DB.Table("players").Where("name = ?", playerName).First(&player).Error
+	if err != nil {
+		return nil, err
+	}
+	return &player, nil
 }
 
 func (pr *playerRepo) GetPlayersByTeamID(ctx context.Context, teamID uint) (*model.Player, error) {

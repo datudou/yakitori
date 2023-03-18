@@ -24,9 +24,9 @@ func Migrate(db *gorm.DB) {
 				},
 			},
 			{
-				ID: "20230318",
+				ID: "inital_data",
 				Migrate: func(tx *gorm.DB) error {
-					di := NewInitalData(tx)
+					di := NewDataInitial(tx)
 					err := di.initTeamData()
 					if err != nil {
 						return err
@@ -37,6 +37,18 @@ func Migrate(db *gorm.DB) {
 						return err
 					}
 					return nil
+				},
+			},
+			{
+				ID: "gamelog-2023-03-15",
+				Migrate: func(tx *gorm.DB) error {
+					return importGame("2022-2023", "2023-03-15", tx)
+				},
+			},
+			{
+				ID: "gamelog-2023-03-16",
+				Migrate: func(tx *gorm.DB) error {
+					return importGame("2022-2023", "2023-03-16", tx)
 				},
 			},
 		})

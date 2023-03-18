@@ -1,8 +1,6 @@
 package model
 
 import (
-	"time"
-
 	"gorm.io/gorm"
 )
 
@@ -25,8 +23,9 @@ const (
 
 type GameLog struct {
 	gorm.Model
-	Event     Event
-	PlayerID  uint
-	GameID    uint
-	TimeStamp time.Time
+	Event    Event   `gorm:"not null"`
+	PlayerID uint    `gorm:"not null"`
+	GameID   uint    `gorm:"not null;index"`
+	TS       float32 `gorm:"not null"`
+	Quarter  int     `gorm:"not null"`
 }
