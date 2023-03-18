@@ -8,7 +8,7 @@ import (
 )
 
 type PlayerRepo interface {
-	GetPlayersByTeam(ctx context.Context, teamID uint) (*model.Player, error)
+	GetPlayersByTeamID(ctx context.Context, teamID uint) (*model.Player, error)
 	// GetPlayerByGame(ctx context.Context, gameID uint) (*model.Player, error)
 	GetPlayers(ctx context.Context, league string) ([]*model.Player, error)
 	CreatePlayer(ctx context.Context, player model.Player) (*model.Player, error)
@@ -24,7 +24,7 @@ func NewPlayerRepo(db *gorm.DB) PlayerRepo {
 	}
 }
 
-func (pr *playerRepo) GetPlayersByTeam(ctx context.Context, teamID uint) (*model.Player, error) {
+func (pr *playerRepo) GetPlayersByTeamID(ctx context.Context, teamID uint) (*model.Player, error) {
 	var player model.Player
 	err := pr.DB.Table("players").Where("team_id = ?", teamID).First(&player).Error
 	if err != nil {

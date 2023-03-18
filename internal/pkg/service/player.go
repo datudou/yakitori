@@ -1,0 +1,36 @@
+package service
+
+import (
+	"context"
+
+	"github.com/new-pop-corn/internal/pkg/model"
+	"github.com/new-pop-corn/internal/pkg/repo"
+)
+
+type PlayerService interface {
+	GetPlayersByTeamID(ctx context.Context, teamID uint) (*model.Player, error)
+	// GetPlayerByGame(ctx context.Context, gameID uint) (*model.Player, error)
+	GetPlayers(ctx context.Context, league string) ([]*model.Player, error)
+}
+
+type playerService struct {
+	PlayerRepo repo.PlayerRepo
+}
+
+func NewPlayerService(pr repo.PlayerRepo) PlayerService {
+	return &playerService{
+		PlayerRepo: pr,
+	}
+}
+
+func (ps *playerService) GetPlayersByTeamID(ctx context.Context, teamID uint) (*model.Player, error) {
+	product, err := ps.PlayerRepo.GetPlayersByTeamID(ctx, teamID)
+	if err != nil {
+		return nil, err
+	}
+	return product, nil
+}
+
+func (ps *playerService) GetPlayers(ctx context.Context, league string) ([]*model.Player, error) {
+	return ps.PlayerRepo.GetPlayers(ctx, league)
+}

@@ -27,13 +27,15 @@ func main() {
 
 	//init repo
 	tr := repo.NewTeamRepo(db.DB())
-	// pr := repo.NewPlayerRepo(db.DB())
+	pr := repo.NewPlayerRepo(db.DB())
 	//init service
 	ts := service.NewTeamService(tr)
+	ps := service.NewPlayerService(pr)
 
 	api.NewHandler(&api.Config{
 		R:               engine,
 		TeamService:     ts,
+		PlayerService:   ps,
 		TimeoutDuration: time.Duration(5 * time.Second),
 	})
 	logrus.SetLevel(logrus.DebugLevel)

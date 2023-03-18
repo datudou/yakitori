@@ -12,7 +12,8 @@ import (
 
 // Handler struct holds required services for handler to function
 type Handler struct {
-	TeamService service.TeamService
+	TeamService   service.TeamService
+	PlayerService service.PlayerService
 }
 
 // Config will hold services that will eventually be injected into this
@@ -20,6 +21,7 @@ type Handler struct {
 type Config struct {
 	R               *gin.Engine
 	TeamService     service.TeamService
+	PlayerService   service.PlayerService
 	TimeoutDuration time.Duration
 }
 
@@ -27,7 +29,8 @@ type Config struct {
 // Does not return as it deals directly with a reference to the gin Engine
 func NewHandler(c *Config) {
 	h := &Handler{
-		TeamService: c.TeamService,
+		TeamService:   c.TeamService,
+		PlayerService: c.PlayerService,
 	}
 
 	log := logrus.New()
@@ -39,5 +42,6 @@ func NewHandler(c *Config) {
 	{
 		g.GET("/teams/:league", h.GetTeams)
 		g.GET("/team/:id", h.GetTeamByID)
+		g.GET("team/:id/players", h.GetPlayersByTeamID)
 	}
 }
