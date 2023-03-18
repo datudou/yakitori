@@ -1,0 +1,3131 @@
+[
+    {
+        "period": 1,
+        "ts": 0.27,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 0.27,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Assist"
+    },
+    {
+        "period": 1,
+        "ts": 0.52,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "Make3"
+    },
+    {
+        "period": 1,
+        "ts": 0.52,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Assist"
+    },
+    {
+        "period": 1,
+        "ts": 0.65,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "Block"
+    },
+    {
+        "period": 1,
+        "ts": 0.65,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "miss2"
+    },
+    {
+        "period": 1,
+        "ts": 0.77,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 1.18,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "miss2"
+    },
+    {
+        "period": 1,
+        "ts": 1.22,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 1.40,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 1.40,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Assist"
+    },
+    {
+        "period": 1,
+        "ts": 1.68,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "miss3"
+    },
+    {
+        "period": 1,
+        "ts": 1.72,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 1.90,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 2.03,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "TO"
+    },
+    {
+        "period": 1,
+        "ts": 2.03,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Steal"
+    },
+    {
+        "period": 1,
+        "ts": 2.05,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 2.30,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 2.58,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "miss2"
+    },
+    {
+        "period": 1,
+        "ts": 2.65,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 2.65,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "OffReb"
+    },
+    {
+        "period": 1,
+        "ts": 2.85,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "miss3"
+    },
+    {
+        "period": 1,
+        "ts": 2.88,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 3.05,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "miss3"
+    },
+    {
+        "period": 1,
+        "ts": 3.10,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "OffReb"
+    },
+    {
+        "period": 1,
+        "ts": 3.17,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "miss3"
+    },
+    {
+        "period": 1,
+        "ts": 3.38,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "miss2"
+    },
+    {
+        "period": 1,
+        "ts": 3.42,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 3.53,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "TO"
+    },
+    {
+        "period": 1,
+        "ts": 3.53,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Steal"
+    },
+    {
+        "period": 1,
+        "ts": 3.62,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "PF"
+    },
+    {
+        "period": 1,
+        "ts": 3.80,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "TO"
+    },
+    {
+        "period": 1,
+        "ts": 4.13,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 4.32,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "miss3"
+    },
+    {
+        "period": 1,
+        "ts": 4.37,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 4.42,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 4.42,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Assist"
+    },
+    {
+        "period": 1,
+        "ts": 4.75,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "Make3"
+    },
+    {
+        "period": 1,
+        "ts": 4.75,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "Assist"
+    },
+    {
+        "period": 1,
+        "ts": 5.00,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "missFT"
+    },
+    {
+        "period": 1,
+        "ts": 5.00,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "missFT"
+    },
+    {
+        "period": 1,
+        "ts": 5.00,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "PF"
+    },
+    {
+        "period": 1,
+        "ts": 5.10,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "OffReb"
+    },
+    {
+        "period": 1,
+        "ts": 5.17,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "Make3"
+    },
+    {
+        "period": 1,
+        "ts": 5.17,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Assist"
+    },
+    {
+        "period": 1,
+        "ts": 5.42,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "miss3"
+    },
+    {
+        "period": 1,
+        "ts": 5.47,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 5.67,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 5.83,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 5.83,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Assist"
+    },
+    {
+        "period": 1,
+        "ts": 6.07,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "miss3"
+    },
+    {
+        "period": 1,
+        "ts": 6.15,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "miss2"
+    },
+    {
+        "period": 1,
+        "ts": 6.15,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "OffReb"
+    },
+    {
+        "period": 1,
+        "ts": 6.17,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 6.20,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "miss2"
+    },
+    {
+        "period": 1,
+        "ts": 6.27,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "OffReb"
+    },
+    {
+        "period": 1,
+        "ts": 6.30,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "miss3"
+    },
+    {
+        "period": 1,
+        "ts": 6.37,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 6.43,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "MakeFT"
+    },
+    {
+        "period": 1,
+        "ts": 6.43,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "PF"
+    },
+    {
+        "period": 1,
+        "ts": 6.43,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 6.43,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "miss2"
+    },
+    {
+        "period": 1,
+        "ts": 6.53,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "PF"
+    },
+    {
+        "period": 1,
+        "ts": 6.73,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 6.97,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "miss3"
+    },
+    {
+        "period": 1,
+        "ts": 7.02,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 7.12,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 7.37,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 7.60,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "Make3"
+    },
+    {
+        "period": 1,
+        "ts": 7.60,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "Assist"
+    },
+    {
+        "period": 1,
+        "ts": 8.02,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "Make3"
+    },
+    {
+        "period": 1,
+        "ts": 8.02,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Assist"
+    },
+    {
+        "period": 1,
+        "ts": 8.15,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "miss3"
+    },
+    {
+        "period": 1,
+        "ts": 8.20,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 8.30,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 8.53,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Make3"
+    },
+    {
+        "period": 1,
+        "ts": 8.83,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 9.02,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 9.02,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Assist"
+    },
+    {
+        "period": 1,
+        "ts": 9.27,
+        "team": "MIL",
+        "player": "Meyers Leonard",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 9.27,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Assist"
+    },
+    {
+        "period": 1,
+        "ts": 9.43,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "miss2"
+    },
+    {
+        "period": 1,
+        "ts": 9.48,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 9.67,
+        "team": "MIL",
+        "player": "Jevon Carter",
+        "event": "miss2"
+    },
+    {
+        "period": 1,
+        "ts": 9.70,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 9.82,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "miss2"
+    },
+    {
+        "period": 1,
+        "ts": 9.88,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 9.88,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "OffReb"
+    },
+    {
+        "period": 1,
+        "ts": 10.08,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "Make3"
+    },
+    {
+        "period": 1,
+        "ts": 10.30,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "miss3"
+    },
+    {
+        "period": 1,
+        "ts": 10.37,
+        "team": "MIL",
+        "player": "Meyers Leonard",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 10.47,
+        "team": "MIL",
+        "player": "Jevon Carter",
+        "event": "miss2"
+    },
+    {
+        "period": 1,
+        "ts": 10.50,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 10.58,
+        "team": "IND",
+        "player": "Oshae Brissett",
+        "event": "miss3"
+    },
+    {
+        "period": 1,
+        "ts": 10.62,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "DefReb"
+    },
+    {
+        "period": 1,
+        "ts": 10.77,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "TO"
+    },
+    {
+        "period": 1,
+        "ts": 10.77,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "Steal"
+    },
+    {
+        "period": 1,
+        "ts": 10.85,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 10.85,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "Assist"
+    },
+    {
+        "period": 1,
+        "ts": 11.03,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Make2"
+    },
+    {
+        "period": 1,
+        "ts": 11.20,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Make3"
+    },
+    {
+        "period": 1,
+        "ts": 11.20,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Assist"
+    },
+    {
+        "period": 1,
+        "ts": 11.45,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Make3"
+    },
+    {
+        "period": 1,
+        "ts": 11.83,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "miss2"
+    },
+    {
+        "period": 1,
+        "ts": 11.87,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 12.22,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 12.32,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 12.50,
+        "team": "MIL",
+        "player": "Wesley Matthews",
+        "event": "Make3"
+    },
+    {
+        "period": 2,
+        "ts": 12.50,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Assist"
+    },
+    {
+        "period": 2,
+        "ts": 12.68,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Make2"
+    },
+    {
+        "period": 2,
+        "ts": 13.00,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 13.07,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 13.13,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "Make3"
+    },
+    {
+        "period": 2,
+        "ts": 13.13,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Assist"
+    },
+    {
+        "period": 2,
+        "ts": 13.47,
+        "team": "MIL",
+        "player": "AJ Green",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 13.52,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 13.55,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 13.60,
+        "team": "MIL",
+        "player": "Wesley Matthews",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 13.90,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 13.95,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 14.02,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "Make3"
+    },
+    {
+        "period": 2,
+        "ts": 14.02,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "Assist"
+    },
+    {
+        "period": 2,
+        "ts": 14.35,
+        "team": "IND",
+        "player": "Oshae Brissett",
+        "event": "PF"
+    },
+    {
+        "period": 2,
+        "ts": 14.57,
+        "team": "MIL",
+        "player": "Jevon Carter",
+        "event": "miss2"
+    },
+    {
+        "period": 2,
+        "ts": 14.60,
+        "team": "IND",
+        "player": "Oshae Brissett",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 14.87,
+        "team": "IND",
+        "player": "Oshae Brissett",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 14.93,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 14.97,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "MakeFT"
+    },
+    {
+        "period": 2,
+        "ts": 14.97,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "missFT"
+    },
+    {
+        "period": 2,
+        "ts": 14.97,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "PF"
+    },
+    {
+        "period": 2,
+        "ts": 15.27,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "MakeFT"
+    },
+    {
+        "period": 2,
+        "ts": 15.27,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "MakeFT"
+    },
+    {
+        "period": 2,
+        "ts": 15.27,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "PF"
+    },
+    {
+        "period": 2,
+        "ts": 15.40,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "TO"
+    },
+    {
+        "period": 2,
+        "ts": 15.40,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "PF"
+    },
+    {
+        "period": 2,
+        "ts": 15.80,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "miss2"
+    },
+    {
+        "period": 2,
+        "ts": 15.87,
+        "team": "MIL",
+        "player": "AJ Green",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 15.97,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 16.02,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 16.03,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "PF"
+    },
+    {
+        "period": 2,
+        "ts": 16.23,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Make2"
+    },
+    {
+        "period": 2,
+        "ts": 16.23,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "Assist"
+    },
+    {
+        "period": 2,
+        "ts": 16.42,
+        "team": "MIL",
+        "player": "AJ Green",
+        "event": "TO"
+    },
+    {
+        "period": 2,
+        "ts": 16.70,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "Make2"
+    },
+    {
+        "period": 2,
+        "ts": 16.90,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "Make2"
+    },
+    {
+        "period": 2,
+        "ts": 16.90,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "Assist"
+    },
+    {
+        "period": 2,
+        "ts": 17.15,
+        "team": "IND",
+        "player": "Oshae Brissett",
+        "event": "Make2"
+    },
+    {
+        "period": 2,
+        "ts": 17.15,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "Assist"
+    },
+    {
+        "period": 2,
+        "ts": 17.30,
+        "team": "MIL",
+        "player": "Jevon Carter",
+        "event": "Make3"
+    },
+    {
+        "period": 2,
+        "ts": 17.30,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Assist"
+    },
+    {
+        "period": 2,
+        "ts": 17.48,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "Block"
+    },
+    {
+        "period": 2,
+        "ts": 17.48,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "miss2"
+    },
+    {
+        "period": 2,
+        "ts": 17.57,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 17.60,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "Make2"
+    },
+    {
+        "period": 2,
+        "ts": 17.60,
+        "team": "MIL",
+        "player": "Jevon Carter",
+        "event": "Assist"
+    },
+    {
+        "period": 2,
+        "ts": 17.88,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 17.93,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "OffReb"
+    },
+    {
+        "period": 2,
+        "ts": 17.95,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "Make2"
+    },
+    {
+        "period": 2,
+        "ts": 17.95,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "Assist"
+    },
+    {
+        "period": 2,
+        "ts": 18.07,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "MakeFT"
+    },
+    {
+        "period": 2,
+        "ts": 18.07,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "MakeFT"
+    },
+    {
+        "period": 2,
+        "ts": 18.07,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "PF"
+    },
+    {
+        "period": 2,
+        "ts": 18.28,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "miss2"
+    },
+    {
+        "period": 2,
+        "ts": 18.33,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 18.48,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "miss2"
+    },
+    {
+        "period": 2,
+        "ts": 18.52,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 18.67,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "TO"
+    },
+    {
+        "period": 2,
+        "ts": 18.67,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Steal"
+    },
+    {
+        "period": 2,
+        "ts": 18.87,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "TO"
+    },
+    {
+        "period": 2,
+        "ts": 19.05,
+        "team": "IND",
+        "player": "Oshae Brissett",
+        "event": "miss2"
+    },
+    {
+        "period": 2,
+        "ts": 19.07,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 19.15,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Make2"
+    },
+    {
+        "period": 2,
+        "ts": 19.35,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "MakeFT"
+    },
+    {
+        "period": 2,
+        "ts": 19.35,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "missFT"
+    },
+    {
+        "period": 2,
+        "ts": 19.35,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "PF"
+    },
+    {
+        "period": 2,
+        "ts": 19.57,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "PF"
+    },
+    {
+        "period": 2,
+        "ts": 19.63,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Make2"
+    },
+    {
+        "period": 2,
+        "ts": 19.95,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "miss2"
+    },
+    {
+        "period": 2,
+        "ts": 20.13,
+        "team": "MIL",
+        "player": "Meyers Leonard",
+        "event": "Make2"
+    },
+    {
+        "period": 2,
+        "ts": 20.13,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Assist"
+    },
+    {
+        "period": 2,
+        "ts": 20.48,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "TO"
+    },
+    {
+        "period": 2,
+        "ts": 20.67,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 20.73,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 20.88,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 20.88,
+        "team": "MIL",
+        "player": "Wesley Matthews",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 20.88,
+        "team": "MIL",
+        "player": "Meyers Leonard",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 20.88,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 21.12,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Make3"
+    },
+    {
+        "period": 2,
+        "ts": 21.47,
+        "team": "MIL",
+        "player": "Meyers Leonard",
+        "event": "Make2"
+    },
+    {
+        "period": 2,
+        "ts": 21.47,
+        "team": "MIL",
+        "player": "Wesley Matthews",
+        "event": "Assist"
+    },
+    {
+        "period": 2,
+        "ts": 21.68,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "Make3"
+    },
+    {
+        "period": 2,
+        "ts": 21.68,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Assist"
+    },
+    {
+        "period": 2,
+        "ts": 21.92,
+        "team": "MIL",
+        "player": "Wesley Matthews",
+        "event": "Make2"
+    },
+    {
+        "period": 2,
+        "ts": 21.92,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Assist"
+    },
+    {
+        "period": 2,
+        "ts": 22.30,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Block"
+    },
+    {
+        "period": 2,
+        "ts": 22.30,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 22.53,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 22.65,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 22.78,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 22.87,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "TO"
+    },
+    {
+        "period": 2,
+        "ts": 22.87,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 23.27,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "Block"
+    },
+    {
+        "period": 2,
+        "ts": 23.27,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 23.30,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 23.30,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "OffReb"
+    },
+    {
+        "period": 2,
+        "ts": 23.40,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "MakeFT"
+    },
+    {
+        "period": 2,
+        "ts": 23.40,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "missFT"
+    },
+    {
+        "period": 2,
+        "ts": 23.40,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "PF"
+    },
+    {
+        "period": 2,
+        "ts": 23.65,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "miss2"
+    },
+    {
+        "period": 2,
+        "ts": 23.75,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "DefReb"
+    },
+    {
+        "period": 2,
+        "ts": 23.90,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "miss3"
+    },
+    {
+        "period": 2,
+        "ts": 23.91,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "OffReb"
+    },
+    {
+        "period": 2,
+        "ts": 23.98,
+        "team": "MIL",
+        "player": "Wesley Matthews",
+        "event": "miss3"
+    },
+    {
+        "period": 3,
+        "ts": 24.20,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 24.48,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Make3"
+    },
+    {
+        "period": 3,
+        "ts": 24.78,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "Make3"
+    },
+    {
+        "period": 3,
+        "ts": 24.78,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 24.92,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "PF"
+    },
+    {
+        "period": 3,
+        "ts": 24.98,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "PF"
+    },
+    {
+        "period": 3,
+        "ts": 25.10,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "miss3"
+    },
+    {
+        "period": 3,
+        "ts": 25.13,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 25.18,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "missFT"
+    },
+    {
+        "period": 3,
+        "ts": 25.18,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "PF"
+    },
+    {
+        "period": 3,
+        "ts": 25.18,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 25.18,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 25.23,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 25.38,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 25.38,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 25.45,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "PF"
+    },
+    {
+        "period": 3,
+        "ts": 25.53,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "MakeFT"
+    },
+    {
+        "period": 3,
+        "ts": 25.53,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "missFT"
+    },
+    {
+        "period": 3,
+        "ts": 25.53,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "PF"
+    },
+    {
+        "period": 3,
+        "ts": 25.70,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 25.70,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 25.90,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "miss2"
+    },
+    {
+        "period": 3,
+        "ts": 25.95,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 26.02,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 26.02,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 26.18,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "TO"
+    },
+    {
+        "period": 3,
+        "ts": 26.18,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "Steal"
+    },
+    {
+        "period": 3,
+        "ts": 26.25,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 26.48,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "miss3"
+    },
+    {
+        "period": 3,
+        "ts": 26.53,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 26.60,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "PF"
+    },
+    {
+        "period": 3,
+        "ts": 26.77,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 26.77,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 26.93,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "miss2"
+    },
+    {
+        "period": 3,
+        "ts": 26.98,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "OffReb"
+    },
+    {
+        "period": 3,
+        "ts": 27.02,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 27.17,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "MakeFT"
+    },
+    {
+        "period": 3,
+        "ts": 27.17,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "MakeFT"
+    },
+    {
+        "period": 3,
+        "ts": 27.17,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "PF"
+    },
+    {
+        "period": 3,
+        "ts": 27.42,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Make3"
+    },
+    {
+        "period": 3,
+        "ts": 27.42,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 27.72,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "miss2"
+    },
+    {
+        "period": 3,
+        "ts": 27.77,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 27.97,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Make3"
+    },
+    {
+        "period": 3,
+        "ts": 27.97,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 28.28,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 28.47,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "miss3"
+    },
+    {
+        "period": 3,
+        "ts": 28.55,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 28.75,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "Make3"
+    },
+    {
+        "period": 3,
+        "ts": 28.75,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 29.05,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 29.05,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 29.27,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 29.27,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 29.50,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 29.50,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 29.68,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 29.68,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 29.87,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "miss2"
+    },
+    {
+        "period": 3,
+        "ts": 29.93,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "miss2"
+    },
+    {
+        "period": 3,
+        "ts": 29.93,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "OffReb"
+    },
+    {
+        "period": 3,
+        "ts": 29.95,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 30.05,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "miss2"
+    },
+    {
+        "period": 3,
+        "ts": 30.25,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 30.27,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 30.62,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 30.62,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 30.82,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "Make3"
+    },
+    {
+        "period": 3,
+        "ts": 30.82,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 31.27,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "Block"
+    },
+    {
+        "period": 3,
+        "ts": 31.27,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "miss2"
+    },
+    {
+        "period": 3,
+        "ts": 31.35,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "miss2"
+    },
+    {
+        "period": 3,
+        "ts": 31.35,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "OffReb"
+    },
+    {
+        "period": 3,
+        "ts": 31.43,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "miss2"
+    },
+    {
+        "period": 3,
+        "ts": 31.43,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "OffReb"
+    },
+    {
+        "period": 3,
+        "ts": 31.45,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 31.47,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "Make3"
+    },
+    {
+        "period": 3,
+        "ts": 31.47,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 31.68,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "miss3"
+    },
+    {
+        "period": 3,
+        "ts": 31.73,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 31.87,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "Make3"
+    },
+    {
+        "period": 3,
+        "ts": 31.87,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 32.15,
+        "team": "MIL",
+        "player": "Meyers Leonard",
+        "event": "Make3"
+    },
+    {
+        "period": 3,
+        "ts": 32.15,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 32.33,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 32.43,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 32.67,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 32.67,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 32.75,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "MakeFT"
+    },
+    {
+        "period": 3,
+        "ts": 32.75,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "MakeFT"
+    },
+    {
+        "period": 3,
+        "ts": 32.75,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "PF"
+    },
+    {
+        "period": 3,
+        "ts": 32.93,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "miss3"
+    },
+    {
+        "period": 3,
+        "ts": 33.00,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 33.23,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "PF"
+    },
+    {
+        "period": 3,
+        "ts": 33.23,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "MakeFT"
+    },
+    {
+        "period": 3,
+        "ts": 33.23,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "MakeFT"
+    },
+    {
+        "period": 3,
+        "ts": 33.82,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 33.88,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Make3"
+    },
+    {
+        "period": 3,
+        "ts": 33.93,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 33.93,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 34.23,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "miss2"
+    },
+    {
+        "period": 3,
+        "ts": 34.28,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 34.35,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "MakeFT"
+    },
+    {
+        "period": 3,
+        "ts": 34.35,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "MakeFT"
+    },
+    {
+        "period": 3,
+        "ts": 34.35,
+        "team": "MIL",
+        "player": "Wesley Matthews",
+        "event": "PF"
+    },
+    {
+        "period": 3,
+        "ts": 34.60,
+        "team": "MIL",
+        "player": "Wesley Matthews",
+        "event": "TO"
+    },
+    {
+        "period": 3,
+        "ts": 34.60,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Steal"
+    },
+    {
+        "period": 3,
+        "ts": 34.67,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 34.67,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 34.95,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "miss2"
+    },
+    {
+        "period": 3,
+        "ts": 35.00,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 35.05,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "Make3"
+    },
+    {
+        "period": 3,
+        "ts": 35.05,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Assist"
+    },
+    {
+        "period": 3,
+        "ts": 35.23,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "miss2"
+    },
+    {
+        "period": 3,
+        "ts": 35.30,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "DefReb"
+    },
+    {
+        "period": 3,
+        "ts": 35.57,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Make2"
+    },
+    {
+        "period": 3,
+        "ts": 35.95,
+        "team": "MIL",
+        "player": "Jevon Carter",
+        "event": "miss3"
+    },
+    {
+        "period": 3,
+        "ts": 35.98,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 36.28,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 36.28,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "missFT"
+    },
+    {
+        "period": 4,
+        "ts": 36.28,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "MakeFT"
+    },
+    {
+        "period": 4,
+        "ts": 36.28,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "PF"
+    },
+    {
+        "period": 4,
+        "ts": 36.48,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "Make2"
+    },
+    {
+        "period": 4,
+        "ts": 36.48,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "Assist"
+    },
+    {
+        "period": 4,
+        "ts": 36.68,
+        "team": "MIL",
+        "player": "Wesley Matthews",
+        "event": "Make3"
+    },
+    {
+        "period": 4,
+        "ts": 36.68,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Assist"
+    },
+    {
+        "period": 4,
+        "ts": 36.92,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "miss2"
+    },
+    {
+        "period": 4,
+        "ts": 36.97,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "OffReb"
+    },
+    {
+        "period": 4,
+        "ts": 37.05,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 37.05,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "missFT"
+    },
+    {
+        "period": 4,
+        "ts": 37.05,
+        "team": "MIL",
+        "player": "Wesley Matthews",
+        "event": "PF"
+    },
+    {
+        "period": 4,
+        "ts": 37.05,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Make2"
+    },
+    {
+        "period": 4,
+        "ts": 37.05,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "Assist"
+    },
+    {
+        "period": 4,
+        "ts": 37.22,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "miss2"
+    },
+    {
+        "period": 4,
+        "ts": 37.25,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 37.32,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "MakeFT"
+    },
+    {
+        "period": 4,
+        "ts": 37.32,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "MakeFT"
+    },
+    {
+        "period": 4,
+        "ts": 37.32,
+        "team": "MIL",
+        "player": "Wesley Matthews",
+        "event": "PF"
+    },
+    {
+        "period": 4,
+        "ts": 37.47,
+        "team": "MIL",
+        "player": "Jevon Carter",
+        "event": "TO"
+    },
+    {
+        "period": 4,
+        "ts": 37.47,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "Steal"
+    },
+    {
+        "period": 4,
+        "ts": 37.55,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Make2"
+    },
+    {
+        "period": 4,
+        "ts": 37.55,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Assist"
+    },
+    {
+        "period": 4,
+        "ts": 37.72,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "miss3"
+    },
+    {
+        "period": 4,
+        "ts": 37.77,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 37.88,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "Make3"
+    },
+    {
+        "period": 4,
+        "ts": 37.88,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Assist"
+    },
+    {
+        "period": 4,
+        "ts": 38.23,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Make2"
+    },
+    {
+        "period": 4,
+        "ts": 38.23,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Assist"
+    },
+    {
+        "period": 4,
+        "ts": 38.55,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "TO"
+    },
+    {
+        "period": 4,
+        "ts": 38.70,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "PF"
+    },
+    {
+        "period": 4,
+        "ts": 38.87,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "TO"
+    },
+    {
+        "period": 4,
+        "ts": 39.17,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "Make2"
+    },
+    {
+        "period": 4,
+        "ts": 39.37,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "miss2"
+    },
+    {
+        "period": 4,
+        "ts": 39.38,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "OffReb"
+    },
+    {
+        "period": 4,
+        "ts": 39.40,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "missFT"
+    },
+    {
+        "period": 4,
+        "ts": 39.40,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "MakeFT"
+    },
+    {
+        "period": 4,
+        "ts": 39.40,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "PF"
+    },
+    {
+        "period": 4,
+        "ts": 39.47,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "OffReb"
+    },
+    {
+        "period": 4,
+        "ts": 39.48,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "TO"
+    },
+    {
+        "period": 4,
+        "ts": 39.67,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "PF"
+    },
+    {
+        "period": 4,
+        "ts": 39.67,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "TO"
+    },
+    {
+        "period": 4,
+        "ts": 39.67,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "Steal"
+    },
+    {
+        "period": 4,
+        "ts": 39.88,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "Make3"
+    },
+    {
+        "period": 4,
+        "ts": 39.88,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Assist"
+    },
+    {
+        "period": 4,
+        "ts": 40.20,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Make2"
+    },
+    {
+        "period": 4,
+        "ts": 40.35,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "TO"
+    },
+    {
+        "period": 4,
+        "ts": 40.35,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "PF"
+    },
+    {
+        "period": 4,
+        "ts": 40.52,
+        "team": "MIL",
+        "player": "Bobby Portis",
+        "event": "PF"
+    },
+    {
+        "period": 4,
+        "ts": 40.72,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "Make3"
+    },
+    {
+        "period": 4,
+        "ts": 40.72,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Assist"
+    },
+    {
+        "period": 4,
+        "ts": 40.87,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "MakeFT"
+    },
+    {
+        "period": 4,
+        "ts": 40.87,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "MakeFT"
+    },
+    {
+        "period": 4,
+        "ts": 40.87,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "PF"
+    },
+    {
+        "period": 4,
+        "ts": 41.18,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Block"
+    },
+    {
+        "period": 4,
+        "ts": 41.18,
+        "team": "IND",
+        "player": "Jordan Nwora",
+        "event": "miss2"
+    },
+    {
+        "period": 4,
+        "ts": 41.25,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 41.42,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "miss3"
+    },
+    {
+        "period": 4,
+        "ts": 41.52,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 41.62,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Make3"
+    },
+    {
+        "period": 4,
+        "ts": 41.62,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "Assist"
+    },
+    {
+        "period": 4,
+        "ts": 41.82,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "Block"
+    },
+    {
+        "period": 4,
+        "ts": 41.82,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "miss3"
+    },
+    {
+        "period": 4,
+        "ts": 41.90,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 41.97,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Make2"
+    },
+    {
+        "period": 4,
+        "ts": 42.32,
+        "team": "MIL",
+        "player": "Khris Middleton",
+        "event": "Make2"
+    },
+    {
+        "period": 4,
+        "ts": 42.32,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Assist"
+    },
+    {
+        "period": 4,
+        "ts": 42.62,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "miss2"
+    },
+    {
+        "period": 4,
+        "ts": 42.65,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "OffReb"
+    },
+    {
+        "period": 4,
+        "ts": 42.85,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "Make2"
+    },
+    {
+        "period": 4,
+        "ts": 42.90,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "MakeFT"
+    },
+    {
+        "period": 4,
+        "ts": 42.90,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "MakeFT"
+    },
+    {
+        "period": 4,
+        "ts": 42.90,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "PF"
+    },
+    {
+        "period": 4,
+        "ts": 43.27,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "miss2"
+    },
+    {
+        "period": 4,
+        "ts": 43.33,
+        "team": "MIL",
+        "player": "Joe Ingles",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 43.47,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "Make2"
+    },
+    {
+        "period": 4,
+        "ts": 43.78,
+        "team": "IND",
+        "player": "Andrew Nembhard",
+        "event": "miss3"
+    },
+    {
+        "period": 4,
+        "ts": 43.85,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 44.02,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 44.02,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "miss3"
+    },
+    {
+        "period": 4,
+        "ts": 44.22,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Make2"
+    },
+    {
+        "period": 4,
+        "ts": 44.37,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "TO"
+    },
+    {
+        "period": 4,
+        "ts": 44.37,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Steal"
+    },
+    {
+        "period": 4,
+        "ts": 44.67,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "TO"
+    },
+    {
+        "period": 4,
+        "ts": 44.67,
+        "team": "MIL",
+        "player": "Pat Connaughton",
+        "event": "Steal"
+    },
+    {
+        "period": 4,
+        "ts": 44.85,
+        "team": "MIL",
+        "player": "Giannis Antetokounmpo",
+        "event": "miss2"
+    },
+    {
+        "period": 4,
+        "ts": 44.93,
+        "team": "IND",
+        "player": "George Hill",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 45.23,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "Make3"
+    },
+    {
+        "period": 4,
+        "ts": 45.23,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Assist"
+    },
+    {
+        "period": 4,
+        "ts": 45.48,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "missFT"
+    },
+    {
+        "period": 4,
+        "ts": 45.48,
+        "team": "MIL",
+        "player": "Jrue Holiday",
+        "event": "MakeFT"
+    },
+    {
+        "period": 4,
+        "ts": 45.48,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "PF"
+    },
+    {
+        "period": 4,
+        "ts": 45.60,
+        "team": "IND",
+        "player": "Aaron Nesmith",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 45.78,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "Make2"
+    },
+    {
+        "period": 4,
+        "ts": 45.78,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Assist"
+    },
+    {
+        "period": 4,
+        "ts": 45.98,
+        "team": "MIL",
+        "player": "Meyers Leonard",
+        "event": "MakeFT"
+    },
+    {
+        "period": 4,
+        "ts": 45.98,
+        "team": "MIL",
+        "player": "Meyers Leonard",
+        "event": "missFT"
+    },
+    {
+        "period": 4,
+        "ts": 45.98,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "PF"
+    },
+    {
+        "period": 4,
+        "ts": 46.25,
+        "team": "IND",
+        "player": "Buddy Hield",
+        "event": "Make3"
+    },
+    {
+        "period": 4,
+        "ts": 46.25,
+        "team": "IND",
+        "player": "T.J. McConnell",
+        "event": "Assist"
+    },
+    {
+        "period": 4,
+        "ts": 46.43,
+        "team": "MIL",
+        "player": "MarJon Beauchamp",
+        "event": "miss2"
+    },
+    {
+        "period": 4,
+        "ts": 46.47,
+        "team": "IND",
+        "player": "Myles Turner",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 46.75,
+        "team": "IND",
+        "player": "Oshae Brissett",
+        "event": "miss3"
+    },
+    {
+        "period": 4,
+        "ts": 46.82,
+        "team": "MIL",
+        "player": "AJ Green",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 46.90,
+        "team": "MIL",
+        "player": "Lindell Wigginton",
+        "event": "miss2"
+    },
+    {
+        "period": 4,
+        "ts": 47.00,
+        "team": "IND",
+        "player": "Oshae Brissett",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 47.23,
+        "team": "IND",
+        "player": "Jalen Smith",
+        "event": "miss3"
+    },
+    {
+        "period": 4,
+        "ts": 47.28,
+        "team": "MIL",
+        "player": "Jevon Carter",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 47.37,
+        "team": "MIL",
+        "player": "Lindell Wigginton",
+        "event": "Make2"
+    },
+    {
+        "period": 4,
+        "ts": 47.53,
+        "team": "IND",
+        "player": "Oshae Brissett",
+        "event": "missFT"
+    },
+    {
+        "period": 4,
+        "ts": 47.53,
+        "team": "IND",
+        "player": "Oshae Brissett",
+        "event": "missFT"
+    },
+    {
+        "period": 4,
+        "ts": 47.53,
+        "team": "MIL",
+        "player": "Meyers Leonard",
+        "event": "PF"
+    },
+    {
+        "period": 4,
+        "ts": 47.58,
+        "team": "MIL",
+        "player": "Meyers Leonard",
+        "event": "DefReb"
+    },
+    {
+        "period": 4,
+        "ts": 47.72,
+        "team": "MIL",
+        "player": "Lindell Wigginton",
+        "event": "miss3"
+    },
+    {
+        "period": 4,
+        "ts": 47.77,
+        "team": "IND",
+        "player": "Isaiah Jackson",
+        "event": "DefReb"
+    }
+]
