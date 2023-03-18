@@ -1,4 +1,4 @@
-package entity
+package model
 
 import (
 	"time"
@@ -16,6 +16,7 @@ const (
 	MAKEFT     Event = "make-ft"
 	MISS3      Event = "miss-3"
 	MISS2      Event = "miss-2"
+	MISSFT     Event = "miss-ft"
 	TO         Event = "turnover"
 	STEAL      Event = "steal"
 	DEFREBOUND Event = "def-reb"

@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/new-pop-corn/internal/pkg/entity"
+	"github.com/new-pop-corn/internal/pkg/migration"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -26,7 +26,7 @@ func SetupConn() error {
 		},
 	)
 
-	dsn := "host=localhost user=kenyiwang password= dbname=pop-corn port=5432 sslmode=disable TimeZone=UTC"
+	dsn := "host=localhost user=kenyiwang dbname=popcorn port=5432 sslmode=disable TimeZone=UTC"
 	db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{
 		Logger: newLogger,
 	})
@@ -46,8 +46,5 @@ func init() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	err = db.AutoMigrate(&entity.Game{}, &entity.GameLog{}, &entity.Team{}, &entity.Player{})
-	if err != nil {
-		log.Fatal(err)
-	}
+	migration.Migrate(db)
 }
