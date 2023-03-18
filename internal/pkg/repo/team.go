@@ -7,44 +7,62 @@ import (
 	"gorm.io/gorm"
 )
 
-type TeamRepository interface {
+type TeamRepo interface {
 	GetTeamByID(ctx context.Context, teamID uint) (*model.Team, error)
 	GetTeamByName(ctx context.Context, name string) (*model.Team, error)
-	Create(ctx context.Context, t model.Team) (*model.Team, error)
+	GetTeamByCode(ctx context.Context, code string) (*model.Team, error)
+	// CreateTeams(ctx context.Context, teams []*model.Team) error
+	CreateTeam(ctx context.Context, team model.Team) error
 	GetTeams(ctx context.Context, league string) ([]*model.Team, error)
 }
 
-type teamRepository struct {
+type teamRepo struct {
 	DB *gorm.DB
 }
 
-func NewTeamRepository(db *gorm.DB) TeamRepository {
-	return &teamRepository{
+func NewTeamRepo(db *gorm.DB) TeamRepo {
+	return &teamRepo{
 		DB: db,
 	}
 }
 
-func (tr *teamRepository) Create(ctx context.Context, team model.Team) (*model.Team, error) {
+// func (tr *teamRepo) CreateTeams(ctx context.Context, teams []*model.Team) error {
+// 	if err := tr.DB.CreateInBatches(&teams, 100).Error; err != nil {
+// 		return err
+// 	}
+// 	return nil
+// }
+
+func (tr *teamRepo) CreateTeam(ctx context.Context, team model.Team) error {
 	if err := tr.DB.Create(&team).Error; err != nil {
-		return nil, err
+		return err
 	}
-	return &team, nil
+	return nil
 }
 
-func (tr *teamRepository) GetTeamByID(ctx context.Context, teamID uint) (*model.Team, error) {
+func (tr *teamRepo) GetTeamByID(ctx context.Context, teamID uint) (*model.Team, error) {
 	return getTeamByID(tr.DB, teamID)
 }
 
-func (tr *teamRepository) GetTeamByName(ctx context.Context, name string) (*model.Team, error) {
+func (tr *teamRepo) GetTeamByName(ctx context.Context, name string) (*model.Team, error) {
 	var team model.Team
-	err := tr.DB.Table("teams").Where("name=?", name).First(&team).Error
+	err := tr.DB.Table("teams").Where("name = ?", name).First(&team).Error
 	if err != nil {
 		return nil, err
 	}
 	return &team, nil
 }
 
-func (tr *teamRepository) GetTeams(ctx context.Context, league string) ([]*model.Team, error) {
+func (tr *teamRepo) GetTeamByCode(ctx context.Context, code string) (*model.Team, error) {
+	var team model.Team
+	err := tr.DB.Table("teams").Where("code = ?", code).First(&team).Error
+	if err != nil {
+		return nil, err
+	}
+	return &team, nil
+}
+
+func (tr *teamRepo) GetTeams(ctx context.Context, league string) ([]*model.Team, error) {
 	var teams []*model.Team
 	err := tr.DB.Table("teams").Where("league = ?", league).Find(&teams).Error
 	if err != nil {
@@ -56,7 +74,7 @@ func (tr *teamRepository) GetTeams(ctx context.Context, league string) ([]*model
 // private function
 func getTeamByID(db *gorm.DB, teamID uint) (*model.Team, error) {
 	var team model.Team
-	err := db.Table("teams").Select("name").Where("id=?", teamID).First(&team).Error
+	err := db.Table("teams").Where("id=?", teamID).First(&team).Error
 	if err != nil {
 		return nil, err
 	}

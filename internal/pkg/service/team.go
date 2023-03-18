@@ -14,10 +14,10 @@ type TeamService interface {
 }
 
 type teamService struct {
-	TeamRepository repo.TeamRepository
+	TeamRepository repo.TeamRepo
 }
 
-func NewTeamService(tr repo.TeamRepository) TeamService {
+func NewTeamService(tr repo.TeamRepo) TeamService {
 	return &teamService{
 		TeamRepository: tr,
 	}

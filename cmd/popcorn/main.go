@@ -26,7 +26,8 @@ func main() {
 	engine := gin.Default()
 
 	//init repo
-	tr := repo.NewTeamRepository(db.DB())
+	tr := repo.NewTeamRepo(db.DB())
+	// pr := repo.NewPlayerRepo(db.DB())
 	//init service
 	ts := service.NewTeamService(tr)
 

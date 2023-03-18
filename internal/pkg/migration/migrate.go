@@ -24,9 +24,19 @@ func Migrate(db *gorm.DB) {
 				},
 			},
 			{
-				ID: "20230317",
+				ID: "20230318",
 				Migrate: func(tx *gorm.DB) error {
-					return initData(tx)
+					di := NewInitalData(tx)
+					err := di.initTeamData()
+					if err != nil {
+						return err
+					}
+					err = di.initPlayerData()
+					if err != nil {
+						fmt.Printf("Error: %v", err)
+						return err
+					}
+					return nil
 				},
 			},
 		})
