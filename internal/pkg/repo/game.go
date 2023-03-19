@@ -51,7 +51,7 @@ func (gr *gameRepo) CreateGame(ctx context.Context, game model.Game) (uint, erro
 
 func (gp *gameRepo) GetGamesByDate(ctx context.Context, date time.Time) ([]*model.Game, error) {
 	var games []*model.Game
-	err := gp.DB.Table("games").Where("date = ?", date).Find(&games).Error
+	err := gp.DB.Table("game").Where("date = ?", date).Find(&games).Error
 	if err != nil {
 		return nil, err
 	}

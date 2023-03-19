@@ -27,6 +27,10 @@ func (h *Handler) GetGameLogByGameID(c *gin.Context) {
 	c.JSON(200, gamelog)
 }
 
+type games struct {
+	ID int `db:"id, json:"id"`
+}
+
 func (h *Handler) GetGamesByDate(c *gin.Context) {
 	ctx := c.Request.Context()
 	date := c.Param("date")
@@ -45,5 +49,6 @@ func (h *Handler) GetGamesByDate(c *gin.Context) {
 		})
 		return
 	}
+
 	c.JSON(200, games)
 }

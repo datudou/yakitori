@@ -11,7 +11,6 @@ type TeamRepo interface {
 	GetTeamByID(ctx context.Context, teamID uint) (*model.Team, error)
 	GetTeamByName(ctx context.Context, name string) (*model.Team, error)
 	GetTeamByCode(ctx context.Context, code string) (*model.Team, error)
-	// CreateTeams(ctx context.Context, teams []*model.Team) error
 	CreateTeam(ctx context.Context, team model.Team) error
 	GetTeams(ctx context.Context, league string) ([]*model.Team, error)
 }

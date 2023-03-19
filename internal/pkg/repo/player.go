@@ -12,6 +12,7 @@ type PlayerRepo interface {
 	GetPlayerByName(ctx context.Context, playerName string) (*model.Player, error)
 	GetPlayers(ctx context.Context, league string) ([]*model.Player, error)
 	CreatePlayer(ctx context.Context, player model.Player) (*model.Player, error)
+	GetPlayerByID(ctx context.Context, id uint) (*model.Player, error)
 }
 
 type playerRepo struct {
@@ -27,6 +28,15 @@ func NewPlayerRepo(db *gorm.DB) PlayerRepo {
 func (pr *playerRepo) GetPlayerByName(ctx context.Context, playerName string) (*model.Player, error) {
 	var player model.Player
 	err := pr.DB.Table("players").Where("name = ?", playerName).First(&player).Error
+	if err != nil {
+		return nil, err
+	}
+	return &player, nil
+}
+
+func (pr *playerRepo) GetPlayerByID(ctx context.Context, id uint) (*model.Player, error) {
+	var player model.Player
+	err := pr.DB.Table("players").Where("id = ?", id).First(&player).Error
 	if err != nil {
 		return nil, err
 	}

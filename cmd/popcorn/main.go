@@ -32,7 +32,7 @@ func main() {
 	//init service
 	ts := service.NewTeamService(tr)
 	ps := service.NewPlayerService(pr)
-	gs := service.NewGameService(gr)
+	gs := service.NewGameService(gr, tr, pr)
 
 	api.NewHandler(&api.Config{
 		R:               engine,
