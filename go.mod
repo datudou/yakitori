@@ -3,6 +3,7 @@ module github.com/new-pop-corn
 go 1.19
 
 require (
+	github.com/google/uuid v1.3.0
 	github.com/opentracing/opentracing-go v1.2.0
 	gorm.io/gorm v1.24.7-0.20230306060331-85eaf9eeda11
 )
