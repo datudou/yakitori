@@ -27,10 +27,6 @@ func (h *Handler) getGameLogByGameID(c *gin.Context) {
 	c.JSON(200, gamelog)
 }
 
-type games struct {
-	ID int `db:"id, json:"id"`
-}
-
 func (h *Handler) getGamesByDate(c *gin.Context) {
 	ctx := c.Request.Context()
 	date := c.Param("date")

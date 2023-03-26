@@ -17,7 +17,7 @@ func NewPlayerRepo(db *gorm.DB) IPlayerRepo {
 	}
 }
 
-func (pr *playerRepo) GetPlayerByName(ctx context.Context, playerName string) (*model.Player, error) {
+func (pr *playerRepo) FindByPlayerName(ctx context.Context, playerName string) (*model.Player, error) {
 	var player model.Player
 	err := pr.DB.Table("players").Where("name = ?", playerName).First(&player).Error
 	if err != nil {
@@ -26,7 +26,7 @@ func (pr *playerRepo) GetPlayerByName(ctx context.Context, playerName string) (*
 	return &player, nil
 }
 
-func (pr *playerRepo) GetPlayerBySimpleName(ctx context.Context, playerName string, teamID uint) (*model.Player, error) {
+func (pr *playerRepo) FindBySimpleNameAndTeamID(ctx context.Context, playerName string, teamID uint) (*model.Player, error) {
 	var player model.Player
 	err := pr.DB.Table("players").Where("simple_name = ? and team_id = ?", playerName, teamID).First(&player).Error
 	if err != nil {
@@ -35,7 +35,7 @@ func (pr *playerRepo) GetPlayerBySimpleName(ctx context.Context, playerName stri
 	return &player, nil
 }
 
-func (pr *playerRepo) GetPlayerByID(ctx context.Context, id uint) (*model.Player, error) {
+func (pr *playerRepo) FindByID(ctx context.Context, id uint) (*model.Player, error) {
 	var player model.Player
 	err := pr.DB.Table("players").Where("id = ?", id).First(&player).Error
 	if err != nil {
@@ -44,7 +44,7 @@ func (pr *playerRepo) GetPlayerByID(ctx context.Context, id uint) (*model.Player
 	return &player, nil
 }
 
-func (pr *playerRepo) GetPlayersByTeamID(ctx context.Context, teamID uint) (*model.Player, error) {
+func (pr *playerRepo) FindByTeamID(ctx context.Context, teamID uint) (*model.Player, error) {
 	var player model.Player
 	err := pr.DB.Table("players").Where("team_id = ?", teamID).First(&player).Error
 	if err != nil {
@@ -53,7 +53,7 @@ func (pr *playerRepo) GetPlayersByTeamID(ctx context.Context, teamID uint) (*mod
 	return &player, nil
 }
 
-func (pr *playerRepo) GetPlayers(ctx context.Context, league string) ([]*model.Player, error) {
+func (pr *playerRepo) FindByLeague(ctx context.Context, league string) ([]*model.Player, error) {
 	var players []*model.Player
 	err := pr.DB.Table("players").Where("league = ?", league).Find(&players).Error
 	if err != nil {
@@ -62,7 +62,7 @@ func (pr *playerRepo) GetPlayers(ctx context.Context, league string) ([]*model.P
 	return players, nil
 }
 
-func (pr *playerRepo) CreatePlayer(ctx context.Context, player model.Player) (*model.Player, error) {
+func (pr *playerRepo) Create(ctx context.Context, player model.Player) (*model.Player, error) {
 	if err := pr.DB.Create(&player).Error; err != nil {
 		return nil, err
 	}

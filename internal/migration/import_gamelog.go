@@ -53,22 +53,22 @@ func importGame(season, date string, db *gorm.DB) error {
 					continue
 				}
 
-				awayTeam, err := repos.TeamRepo.GetTeamByCode(ctx, game.AwayTeam)
+				awayTeam, err := repos.TeamRepo.FindByCode(ctx, game.AwayTeam)
 				if err != nil {
 					fmt.Printf("AwayTeam %s not found", game.AwayTeam)
 					return err
 				}
-				homeTeam, err := repos.TeamRepo.GetTeamByCode(ctx, game.HomeTeam)
+				homeTeam, err := repos.TeamRepo.FindByCode(ctx, game.HomeTeam)
 				if err != nil {
 					fmt.Printf("HomeTeam %s not found", game.HomeTeam)
 					return err
 				}
 				var player *model.Player
-				player, err = repos.PlayerRepo.GetPlayerBySimpleName(ctx, pa.Player, awayTeam.ID)
+				player, err = repos.PlayerRepo.FindBySimpleNameAndTeamID(ctx, pa.Player, awayTeam.ID)
 
 				if err != nil {
 					if err == gorm.ErrRecordNotFound {
-						player, err = repos.PlayerRepo.GetPlayerBySimpleName(ctx, pa.Player, homeTeam.ID)
+						player, err = repos.PlayerRepo.FindBySimpleNameAndTeamID(ctx, pa.Player, homeTeam.ID)
 						if err != nil {
 							fmt.Printf("Player %s not found", pa.Player)
 							return err

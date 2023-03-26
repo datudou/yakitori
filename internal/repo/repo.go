@@ -9,24 +9,24 @@ import (
 )
 
 type IPlayerRepo interface {
-	GetPlayersByTeamID(ctx context.Context, teamID uint) (*model.Player, error)
-	GetPlayerByName(ctx context.Context, playerName string) (*model.Player, error)
-	GetPlayers(ctx context.Context, league string) ([]*model.Player, error)
-	CreatePlayer(ctx context.Context, player model.Player) (*model.Player, error)
-	GetPlayerByID(ctx context.Context, id uint) (*model.Player, error)
-	GetPlayerBySimpleName(ctx context.Context, playerName string, teamID uint) (*model.Player, error)
+	FindByTeamID(ctx context.Context, teamID uint) (*model.Player, error)
+	FindByPlayerName(ctx context.Context, playerName string) (*model.Player, error)
+	FindByID(ctx context.Context, id uint) (*model.Player, error)
+	FindByLeague(ctx context.Context, league string) ([]*model.Player, error)
+	FindBySimpleNameAndTeamID(ctx context.Context, simpleName string, teamID uint) (*model.Player, error)
+	Create(ctx context.Context, player model.Player) (*model.Player, error)
 }
 type ITeamRepo interface {
-	GetTeamByID(ctx context.Context, teamID uint) (*model.Team, error)
-	GetTeamByName(ctx context.Context, name string) (*model.Team, error)
-	GetTeamByCode(ctx context.Context, code string) (*model.Team, error)
-	CreateTeam(ctx context.Context, team model.Team) error
-	GetTeams(ctx context.Context, league string) ([]*model.Team, error)
+	FindByID(ctx context.Context, teamID uint) (*model.Team, error)
+	FindByName(ctx context.Context, name string) (*model.Team, error)
+	FindByCode(ctx context.Context, code string) (*model.Team, error)
+	FindByLeague(ctx context.Context, league string) ([]*model.Team, error)
+	Create(ctx context.Context, team model.Team) error
 }
 
 type IGameLogRepo interface {
-	Create(ctx context.Context, gameLog model.GameLog) error
 	FindByGameID(ctx context.Context, gameID uint) ([]*model.GameLog, error)
+	Create(ctx context.Context, gameLog model.GameLog) error
 }
 
 type IGameRepo interface {

@@ -31,7 +31,7 @@ func (gr *gameRepo) Create(ctx context.Context, game *model.Game) (uint, error) 
 
 func (gp *gameRepo) FindGamesByDate(ctx context.Context, date time.Time) ([]*model.Game, error) {
 	var games []*model.Game
-	err := gp.DB.Table("games").Where("date = ?", date).Find(&games).Error
+	err := gp.DB.Table("games").Where("start_date between ? and ?", date, date.Add(24*time.Hour)).Find(&games).Error
 	if err != nil {
 		return nil, err
 	}

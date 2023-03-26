@@ -18,7 +18,6 @@ func NewGameLogRepo(db *gorm.DB) IGameLogRepo {
 
 }
 
-// CreateGameLog implements GameRepo
 func (gr *gameLogRepo) Create(ctx context.Context, gameLog model.GameLog) error {
 	if err := gr.DB.Create(&gameLog).Error; err != nil {
 		return err

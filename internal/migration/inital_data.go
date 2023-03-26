@@ -55,7 +55,7 @@ func (di *dataInitial) initPlayerData() error {
 		var result []jsonRead
 		json.Unmarshal(byteValute, &result)
 		for _, r := range result {
-			team, err := di.TR.GetTeamByCode(context.Background(), strings.ToUpper(r.Team))
+			team, err := di.TR.FindByCode(context.Background(), strings.ToUpper(r.Team))
 			if err != nil {
 				return err
 			}
@@ -68,7 +68,7 @@ func (di *dataInitial) initPlayerData() error {
 				Position:   r.Pos,
 				Age:        r.Age,
 			}
-			_, err = di.PR.CreatePlayer(context.Background(), player)
+			_, err = di.PR.Create(context.Background(), player)
 			if err != nil {
 				return err
 			}
@@ -98,7 +98,7 @@ func (di *dataInitial) initTeamData() error {
 		var teams []model.Team
 		json.Unmarshal(byteValute, &teams)
 		for _, team := range teams {
-			err = di.TR.CreateTeam(context.Background(), team)
+			err = di.TR.Create(context.Background(), team)
 			if err != nil {
 				return err
 			}

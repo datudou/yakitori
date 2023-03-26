@@ -18,13 +18,13 @@ func NewTeamService(tr repo.ITeamRepo) TeamService {
 }
 
 func (ts *teamService) GetTeamByName(ctx context.Context, teamName string) (*model.Team, error) {
-	return ts.repo.GetTeamByName(ctx, teamName)
+	return ts.repo.FindByName(ctx, teamName)
 }
 
 func (ts *teamService) GetTeamByID(ctx context.Context, teamID uint) (*model.Team, error) {
-	return ts.repo.GetTeamByID(ctx, teamID)
+	return ts.repo.FindByID(ctx, teamID)
 }
 
 func (ts *teamService) GetTeams(ctx context.Context, league string) ([]*model.Team, error) {
-	return ts.repo.GetTeams(ctx, league)
+	return ts.repo.FindByLeague(ctx, league)
 }

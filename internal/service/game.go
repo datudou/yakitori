@@ -27,11 +27,11 @@ func (gs *gameService) GetGamesByDate(ctx context.Context, date time.Time) ([]*m
 		return nil, err
 	}
 	for _, game := range games {
-		homeTeam, err := gs.repo.TeamRepo.GetTeamByCode(ctx, game.HomeTeam)
+		homeTeam, err := gs.repo.TeamRepo.FindByCode(ctx, game.HomeTeam)
 		if err != nil {
 			return nil, err
 		}
-		awayTeam, err := gs.repo.TeamRepo.GetTeamByCode(ctx, game.AwayTeam)
+		awayTeam, err := gs.repo.TeamRepo.FindByCode(ctx, game.AwayTeam)
 		if err != nil {
 			return nil, err
 		}
@@ -54,12 +54,12 @@ func (gs *gameService) GetGameLogByGameID(ctx context.Context, gameID uint) (map
 	}
 
 	for _, gameLog := range gameLogs {
-		player, err := gs.repo.PlayerRepo.GetPlayerByID(ctx, gameLog.PlayerID)
+		player, err := gs.repo.PlayerRepo.FindByID(ctx, gameLog.PlayerID)
 		if err != nil {
 			log.Error(err)
 			return nil, err
 		}
-		team, err := gs.repo.TeamRepo.GetTeamByID(ctx, player.TeamID)
+		team, err := gs.repo.TeamRepo.FindByID(ctx, player.TeamID)
 		if err != nil {
 			log.Error(err)
 			return nil, err

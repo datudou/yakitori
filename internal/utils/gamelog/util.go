@@ -27,15 +27,15 @@ const (
 func Parse(gameLog string) []*model.PlayerAction {
 	var playerActions []*model.PlayerAction
 	playerNamePattern := regexp.MustCompile(playerName)
-	nameMatch := playerNamePattern.FindStringSubmatch(gameLog)
+	nameMatch := playerNamePattern.FindAllStringSubmatch(gameLog, -1)
 	if strings.Contains(gameLog, swtichDesc) {
 		if len(nameMatch) > 1 {
 			player1Action := &model.PlayerAction{
-				Player: nameMatch[0],
+				Player: nameMatch[0][0],
 				Event:  model.ON,
 			}
 			player2Action := &model.PlayerAction{
-				Player: nameMatch[1],
+				Player: nameMatch[1][0],
 				Event:  model.OFF,
 			}
 			playerActions = append(playerActions, player1Action, player2Action)
@@ -49,8 +49,8 @@ func Parse(gameLog string) []*model.PlayerAction {
 
 	var player string
 	var event model.Event
-	if len(nameMatch) > 1 {
-		player = nameMatch[0]
+	if len(nameMatch) > 0 {
+		player = nameMatch[0][1]
 	}
 
 	for _, p := range patterns {

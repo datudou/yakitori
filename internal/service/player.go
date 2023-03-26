@@ -18,9 +18,9 @@ func NewPlayerService(pr repo.IPlayerRepo) PlayerService {
 }
 
 func (ps *playerService) GetPlayersByTeamID(ctx context.Context, teamID uint) (*model.Player, error) {
-	return ps.repo.GetPlayersByTeamID(ctx, teamID)
+	return ps.repo.FindByTeamID(ctx, teamID)
 }
 
 func (ps *playerService) GetPlayers(ctx context.Context, league string) ([]*model.Player, error) {
-	return ps.repo.GetPlayers(ctx, league)
+	return ps.repo.FindByLeague(ctx, league)
 }
