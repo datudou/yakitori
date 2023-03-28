@@ -8,6 +8,8 @@ import (
 	"gorm.io/gorm"
 )
 
+type DBOption func(*gorm.DB) *gorm.DB
+
 type IPlayerRepo interface {
 	FindByTeamID(ctx context.Context, teamID uint) (*model.Player, error)
 	FindByPlayerName(ctx context.Context, playerName string) (*model.Player, error)
@@ -25,8 +27,9 @@ type ITeamRepo interface {
 }
 
 type IGameLogRepo interface {
-	FindByGameID(ctx context.Context, gameID uint) ([]*model.GameLog, error)
+	Find(ctx context.Context, opts ...DBOption) ([]*model.GameLog, error)
 	Create(ctx context.Context, gameLog model.GameLog) error
+	WithByGameID(gameID uint) DBOption
 }
 
 type IGameRepo interface {

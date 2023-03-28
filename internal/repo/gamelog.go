@@ -18,18 +18,34 @@ func NewGameLogRepo(db *gorm.DB) IGameLogRepo {
 
 }
 
-func (gr *gameLogRepo) Create(ctx context.Context, gameLog model.GameLog) error {
-	if err := gr.DB.Create(&gameLog).Error; err != nil {
+func (glr *gameLogRepo) Create(ctx context.Context, gameLog model.GameLog) error {
+	if err := glr.DB.Create(&gameLog).Error; err != nil {
 		return err
 	}
 	return nil
 }
 
-func (gr *gameLogRepo) FindByGameID(ctx context.Context, gameID uint) ([]*model.GameLog, error) {
+func (glr *gameLogRepo) Find(ctx context.Context, opts ...DBOption) ([]*model.GameLog, error) {
+
+	db := glr.optionDB(ctx, opts...)
 	var gamelogs []*model.GameLog
-	err := gr.DB.Table("game_logs").Where("game_id = ?", gameID).Find(&gamelogs).Error
+	err := db.Find(&gamelogs).Error
 	if err != nil {
 		return nil, err
 	}
 	return gamelogs, nil
+}
+
+func (glr *gameLogRepo) WithByGameID(gameID uint) DBOption {
+	return func(db *gorm.DB) *gorm.DB {
+		return db.Table("game_logs").Where("game_id = ?", gameID)
+	}
+}
+
+func (glr *gameLogRepo) optionDB(ctx context.Context, opts ...DBOption) *gorm.DB {
+	db := glr.DB.WithContext(ctx)
+	for _, opt := range opts {
+		db = opt(db)
+	}
+	return db
 }

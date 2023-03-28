@@ -8,13 +8,9 @@ import (
 	"gorm.io/gorm"
 )
 
-type DBOption func(*gorm.DB) *gorm.DB
-
 type gameRepo struct {
 	DB *gorm.DB
 }
-
-// FindByDate implements IGameRepo
 
 func NewGameRepo(db *gorm.DB) IGameRepo {
 	return &gameRepo{
