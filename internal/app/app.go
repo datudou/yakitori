@@ -9,7 +9,9 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
+	"github.com/new-pop-corn/config"
 	"github.com/new-pop-corn/internal/api"
+	"github.com/new-pop-corn/internal/app/initialize"
 	db "github.com/new-pop-corn/internal/database"
 	"github.com/new-pop-corn/internal/repo"
 	"github.com/new-pop-corn/internal/service"
@@ -17,35 +19,27 @@ import (
 )
 
 func Run() {
-	//init logger
-	logger, _ := zap.NewDevelopment()
-	zap.ReplaceGlobals(logger)
 
-	// init db
-	if err := db.SetupConn(); err != nil {
-		zap.S().Fatal(err)
-	}
-
-	//init gin
-	engine := gin.Default()
+	initialize.InitLogger()
+	initialize.InitConfig()
+	initialize.InitDB()
 
 	//init repo
-	repos := repo.NewRepositories(db.DB())
-
+	repos := repo.NewRepositories(db.Get())
 	//init service
 	services := service.NewServices(service.Deps{
 		Repos: repos,
 	})
-
-	//init api
+	//init router
+	engine := gin.Default()
 	api.NewHandler(&api.Config{
 		R:               engine,
 		Services:        services,
-		TimeoutDuration: time.Duration(5 * time.Second),
+		TimeoutDuration: time.Duration(config.ServerConf.Server.HTTPTimeout) * time.Second,
 	})
 
 	srv := &http.Server{
-		Addr:    ":8080",
+		Addr:    config.ServerConf.Server.Addr,
 		Handler: engine,
 	}
 
@@ -55,9 +49,9 @@ func Run() {
 			zap.S().Fatalf("listen: %s\n", err)
 		}
 	}()
+	zap.S().Infof("Server listen on: %s", config.ServerConf.Server.Addr)
 
 	// Wait for interrupt signal to gracefully shutdown the server with
-	// a timeout of 5 seconds.
 	quit := make(chan os.Signal)
 	// kill (no param) default send syscanll.SIGTERM
 	// kill -2 is syscall.SIGINT
@@ -66,12 +60,14 @@ func Run() {
 	<-quit
 	zap.S().Info("Shutdown Server ...")
 
-	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Second)
+	timeout := config.ServerConf.Server.ShutdownTimeout
+
+	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(timeout)*time.Second)
 	defer cancel()
 	if err := srv.Shutdown(ctx); err != nil {
 		zap.S().Fatal("Server Shutdown:", err)
 	}
-	// catching ctx.Done(). timeout of 1 seconds.
+	// catching ctx.Done(). timeout of ${timeout} seconds.
 	<-ctx.Done()
-	zap.S().Info("timeout of 1 seconds.")
+	zap.S().Infof("timeout of %d seconds.", timeout)
 }

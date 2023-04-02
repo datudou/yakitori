@@ -19,9 +19,9 @@ type PlayerService interface {
 }
 
 type TeamService interface {
-	GetTeamByName(ctx context.Context, teamName string) (*model.Team, error)
-	GetTeamByID(ctx context.Context, teamID uint) (*model.Team, error)
-	GetTeams(ctx context.Context, league string) ([]*model.Team, error)
+	FindByName(ctx context.Context, teamName string) (*model.Team, error)
+	FindByID(ctx context.Context, teamID uint) (*model.Team, error)
+	FindByLeague(ctx context.Context, league string) ([]*model.Team, error)
 }
 
 type Services struct {

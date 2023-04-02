@@ -31,10 +31,14 @@ func NewHandler(c *Config) {
 	h := &Handler{
 		Services: c.Services,
 	}
-	store := persistence.NewInMemoryStore(time.Hour)
+	store := persistence.NewInMemoryStore(24 * time.Hour)
 
 	c.R.Use(gin.Recovery())
 	c.R.Use(middleware.Timeout(c.TimeoutDuration, apperrors.NewServiceUnavailable()))
+
+	c.R.GET("/health", func(c *gin.Context) {
+		time.Sleep(10 * time.Second)
+	})
 
 	g := c.R.Group("/api/v1")
 	{

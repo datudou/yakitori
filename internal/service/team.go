@@ -17,14 +17,14 @@ func NewTeamService(tr repo.ITeamRepo) TeamService {
 	}
 }
 
-func (ts *teamService) GetTeamByName(ctx context.Context, teamName string) (*model.Team, error) {
+func (ts *teamService) FindByName(ctx context.Context, teamName string) (*model.Team, error) {
 	return ts.repo.FindByName(ctx, teamName)
 }
 
-func (ts *teamService) GetTeamByID(ctx context.Context, teamID uint) (*model.Team, error) {
+func (ts *teamService) FindByID(ctx context.Context, teamID uint) (*model.Team, error) {
 	return ts.repo.FindByID(ctx, teamID)
 }
 
-func (ts *teamService) GetTeams(ctx context.Context, league string) ([]*model.Team, error) {
+func (ts *teamService) FindByLeague(ctx context.Context, league string) ([]*model.Team, error) {
 	return ts.repo.FindByLeague(ctx, league)
 }

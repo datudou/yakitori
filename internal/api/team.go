@@ -11,7 +11,7 @@ func (h *Handler) getTeams(c *gin.Context) {
 	ctx := c.Request.Context()
 	league := c.Param("league")
 
-	teams, err := h.Services.TeamService.GetTeams(ctx, league)
+	teams, err := h.Services.TeamService.FindByLeague(ctx, league)
 	if err != nil {
 		c.JSON(apperrors.Status(err), gin.H{
 			"error": err,
@@ -30,7 +30,7 @@ func (h *Handler) getTeamByID(c *gin.Context) {
 		})
 		return
 	}
-	teams, err := h.Services.TeamService.GetTeamByID(ctx, uint(id))
+	teams, err := h.Services.TeamService.FindByID(ctx, uint(id))
 	if err != nil {
 		c.JSON(apperrors.Status(err), gin.H{
 			"error": err,

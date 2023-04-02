@@ -17,14 +17,14 @@ func (h *Handler) getGameLogByGameID(c *gin.Context) {
 		})
 		return
 	}
-	gamelog, err := h.Services.GameService.GetGameLogByGameID(ctx, uint(id))
+	gameLog, err := h.Services.GameService.GetGameLogByGameID(ctx, uint(id))
 	if err != nil {
 		c.JSON(apperrors.Status(err), gin.H{
 			"error": err,
 		})
 		return
 	}
-	c.JSON(200, gamelog)
+	c.JSON(200, gameLog)
 }
 
 func (h *Handler) getGamesByDate(c *gin.Context) {
