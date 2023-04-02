@@ -35,6 +35,7 @@ type IGameLogRepo interface {
 type IGameRepo interface {
 	FindGamesByDate(ctx context.Context, date time.Time) ([]*model.Game, error)
 	FindGameIDByDate(ctx context.Context, date time.Time, homeTeam, season string) (uint, error)
+	FindByID(ctx context.Context, gameID uint) (*model.Game, error)
 	Create(ctx context.Context, game *model.Game) (uint, error)
 }
 

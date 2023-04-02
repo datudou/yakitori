@@ -10,7 +10,7 @@ import (
 
 type GameService interface {
 	GetGamesByDate(ctx context.Context, date time.Time) ([]*model.GameResp, error)
-	GetGameLogByGameID(ctx context.Context, gameID uint) (map[string]*model.PlayerActionLog, error)
+	GetGameLogByGameID(ctx context.Context, gameID uint) ([]*model.PlayerActionLog, error)
 }
 
 type PlayerService interface {

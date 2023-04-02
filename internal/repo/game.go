@@ -17,6 +17,16 @@ func NewGameRepo(db *gorm.DB) IGameRepo {
 		DB: db,
 	}
 }
+func (gr *gameRepo) FindByID(ctx context.Context, gameID uint) (*model.Game, error) {
+	var game *model.Game
+	err := gr.DB.Table("games").
+		Where("id = ?", gameID).
+		First(&game).Error
+	if err != nil {
+		return nil, err
+	}
+	return game, nil
+}
 
 func (gr *gameRepo) Create(ctx context.Context, game *model.Game) (uint, error) {
 	if err := gr.DB.Create(&game).Error; err != nil {

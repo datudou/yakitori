@@ -1,27 +1,25 @@
-'use client';
 import { Inter } from 'next/font/google'
 import Navbar from '../components/Navbar'
 import GridList from '../components/GridList'
-import { useState, useEffect } from 'react';
+
+
+
+async function fetchGames() {
+  const res = await fetch("http://localhost:8080/api/v1/games/2022-10-19");
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch data');
+  }
+
+  return res.json();
+}
 
 
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
-  const [games, setGames] = useState([]);
-  useEffect(() => {
-    async function fetchGames() {
-      try {
-        const resp = await fetch("/api/v1/games/2023-03-16")
-        const data = await resp.json()
-        setGames(await data)
-      } catch (error) {
-        console.error(error)
-      }
-    }
-    fetchGames()
-  }, [])
+export default async function Home() {
+  const games = await fetchGames();
 
   return (
     <main>
@@ -34,7 +32,7 @@ export default function Home() {
             </div>
           </header>
           <main>
-            <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl sm:px-6 lg:px-8" >
               <GridList games={games}></GridList>
             </div>
           </main>

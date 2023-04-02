@@ -4,8 +4,6 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/new-pop-corn/internal/middleware"
-	"github.com/new-pop-corn/internal/model/apperrors"
 	"github.com/new-pop-corn/internal/service"
 	"github.com/sirupsen/logrus"
 )
@@ -33,14 +31,13 @@ func NewHandler(c *Config) {
 	log := logrus.New()
 	log.SetLevel(logrus.DebugLevel)
 	c.R.Use(gin.Recovery())
-	c.R.Use(middleware.Timeout(c.TimeoutDuration, apperrors.NewServiceUnavailable()))
 
 	g := c.R.Group("/api/v1")
 	{
 		g.GET("/teams/:league", h.getTeams)
 		g.GET("/team/:id", h.getTeamByID)
 		g.GET("/team/:id/players", h.getPlayersByTeamID)
-		g.GET("/game/:id/gamelog", h.getGameLogByGameID)
 		g.GET("/games/:date", h.getGamesByDate)
+		g.GET("/game/:id/gamelog", h.getGameLogByGameID)
 	}
 }

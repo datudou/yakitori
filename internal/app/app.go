@@ -20,7 +20,7 @@ import (
 func Run() {
 	// init db
 	if err := db.SetupConn(); err != nil {
-		log.Fatal(err)
+		logrus.Fatal(err)
 	}
 	logrus.SetLevel(logrus.DebugLevel)
 

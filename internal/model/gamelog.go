@@ -53,11 +53,14 @@ type Action struct {
 }
 
 type PlayerActionLog struct {
-	Event     map[int][]Action            `json:"event"`
-	Mins      map[int][]map[Event]float32 `json:"mins"`
-	Team      string                      `json:"team"`
-	IsOnField int                         `json:"-"`
-	Period    int                         `json:"-"`
+	PlayerName string                `json:"player_name"`
+	Event      map[int][]Action      `json:"event"`
+	Durations  [][]map[Event]float32 `json:"mins"`
+	TotalTime  float32               `json:"total_time"`
+	Team       string                `json:"team"`
+	IsHomeTeam bool                  `json:"is_home_team"`
+	IsOnField  int                   `json:"-"`
+	Period     int                   `json:"-"`
 }
 
 type PlayerData struct {
