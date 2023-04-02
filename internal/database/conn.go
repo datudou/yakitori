@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"github.com/new-pop-corn/internal/migration"
+	"go.uber.org/zap"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -44,7 +45,7 @@ func DB() *gorm.DB {
 func init() {
 	err := SetupConn()
 	if err != nil {
-		log.Fatal(err)
+		zap.S().Fatal(err)
 	}
 	migration.Migrate(db)
 }

@@ -4,8 +4,12 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
+	"github.com/new-pop-corn/internal/middleware"
+	"github.com/new-pop-corn/internal/model/apperrors"
 	"github.com/new-pop-corn/internal/service"
-	"github.com/sirupsen/logrus"
+
+	"github.com/gin-contrib/cache"
+	"github.com/gin-contrib/cache/persistence"
 )
 
 // Handler struct holds required services for handler to function
@@ -27,10 +31,10 @@ func NewHandler(c *Config) {
 	h := &Handler{
 		Services: c.Services,
 	}
+	store := persistence.NewInMemoryStore(time.Hour)
 
-	log := logrus.New()
-	log.SetLevel(logrus.DebugLevel)
 	c.R.Use(gin.Recovery())
+	c.R.Use(middleware.Timeout(c.TimeoutDuration, apperrors.NewServiceUnavailable()))
 
 	g := c.R.Group("/api/v1")
 	{
@@ -38,6 +42,6 @@ func NewHandler(c *Config) {
 		g.GET("/team/:id", h.getTeamByID)
 		g.GET("/team/:id/players", h.getPlayersByTeamID)
 		g.GET("/games/:date", h.getGamesByDate)
-		g.GET("/game/:id/gamelog", h.getGameLogByGameID)
+		g.GET("/game/:id/gamelog", cache.CachePage(store, 24*time.Hour, h.getGameLogByGameID))
 	}
 }
