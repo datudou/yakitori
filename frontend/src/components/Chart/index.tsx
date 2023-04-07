@@ -74,7 +74,7 @@ const secondsToMinSecPadded = time => {
 };
 
 
-const StackedRangeBar = ({ isHome, gameLogs, quater, isShowYAxis }) => {
+const StackedRangeBar = ({ isHome, gameLogs, quarter, isShowYAxis }) => {
   let cat = []
   let data: { name: string; value: any[]; itemStyle: { normal: { color: string; }; }; }[] = []
   let startTime = 12

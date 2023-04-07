@@ -1,11 +1,10 @@
-import { Inter } from 'next/font/google'
 import Navbar from '../components/Navbar'
 import GridList from '../components/GridList'
 
 
 
 async function fetchGames() {
-  const res = await fetch("http://localhost:8080/api/v1/games/2022-10-19");
+  const res = await fetch("/api/v1/games/2022-10-19");
 
   if (!res.ok) {
     throw new Error('Failed to fetch data');
@@ -15,8 +14,6 @@ async function fetchGames() {
 }
 
 
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default async function Home() {
   const games = await fetchGames();

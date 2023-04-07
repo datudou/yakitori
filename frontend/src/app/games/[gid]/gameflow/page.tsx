@@ -1,6 +1,4 @@
-import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
-import _ from 'lodash';
 
 
 import dynamic from 'next/dynamic';
@@ -11,7 +9,7 @@ const Chart = dynamic(
 );
 
 async function fetchGameLogs(gid: string) {
-  const res = await fetch(`http://localhost:8080/api/v1/game/${gid}/gamelog`);
+  const res = await fetch(`/api/v1/game/${gid}/gamelog`);
   const data = await res.json();
   let homeTeamGameLogs = [];
   let awayTeamGameLogs = [];
@@ -45,38 +43,22 @@ export default async function GameFlow({ params: { gid } }) {
           <main>
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="grid lg:grid-cols-4 gap-0">
+                {[1, 2, 3, 4].map((quarter)=>
                 <div>
-                  <Chart isHome={true} gameLogs={homeTeamGameLogs} quater={1} isShowYAxis={true} />
+                  <Chart isHome={true} gameLogs={homeTeamGameLogs} quarter={quarter} isShowYAxis={true} />
                 </div>
-                <div>
-                  <Chart isHome={true} gameLogs={homeTeamGameLogs} quater={2} isShowYAxis={false} />
-                </div>
-                <div>
-                  <Chart isHome={true} gameLogs={homeTeamGameLogs} quater={3} isShowYAxis={false} />
-                </div>
-                <div>
-                  <Chart isHome={true} gameLogs={homeTeamGameLogs} quater={4} isShowYAxis={false} />
-                </div>
+                )}
               </div>
             </div>
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="grid lg:grid-cols-4 gap-0">
+                {[1, 2, 3, 4].map((quarter)=>
                 <div>
-                  <Chart isHome={false} gameLogs={awayTeamGameLogs} quater={1} isShowYAxis={true} />
+                  <Chart isHome={true} gameLogs={homeTeamGameLogs} quarter={quarter} isShowYAxis={true} />
                 </div>
-                <div >
-                  <Chart isHome={false} gameLogs={awayTeamGameLogs} quater={2} isShowYAxis={false} />
-                </div>
-                <div >
-                  <Chart isHome={false} gameLogs={awayTeamGameLogs} quater={3} isShowYAxis={false} />
-                </div>
-                <div >
-                  <Chart isHome={false} gameLogs={awayTeamGameLogs} quater={4} isShowYAxis={false} />
-                </div>
+                )}
               </div>
             </div>
-
-
           </main>
         </div>
       </div>

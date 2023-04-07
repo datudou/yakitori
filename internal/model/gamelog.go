@@ -1,6 +1,6 @@
 package model
 
-import "time"
+import "gorm.io/gorm"
 
 type Event string
 
@@ -22,20 +22,17 @@ const (
 )
 
 type GameLog struct {
-	ID                       uint       `json:"id" gorm:"primarykey"`
-	CreatedAt                time.Time  `json:"-"`
-	UpdatedAt                time.Time  `json:"-"`
-	DeletedAt                *time.Time `json:"-" gorm:"index"`
-	PlayerID                 uint       `gorm:"index;not null"`
-	GameID                   uint       `gorm:"index;not null"`
-	RemainingSecondsInPeriod float32    `gorm:"not null"`
-	Period                   int        `gorm:"not null"`
-	Event                    Event      `gorm:"not null"`
-	PeriodType               string     `gorm:"not null"`
-	AwayScore                int        `gorm:"not null"`
-	HomeScore                int        `gorm:"not null"`
-	Description              string     `gorm:"not null"`
-	EventID                  string     `gorm:"uniqueIndex:idx_gamelog;not null;size:100"`
+	gorm.Model
+	PlayerID                 uint    `gorm:"index;not null"`
+	GameID                   uint    `gorm:"index;not null"`
+	RemainingSecondsInPeriod float32 `gorm:"not null"`
+	Period                   int     `gorm:"not null"`
+	Event                    Event   `gorm:"not null"`
+	PeriodType               string  `gorm:"not null"`
+	AwayScore                int     `gorm:"not null"`
+	HomeScore                int     `gorm:"not null"`
+	Description              string  `gorm:"not null"`
+	EventID                  string  `gorm:"uniqueIndex:idx_gamelog;not null;size:100"`
 }
 
 type GameLogResp struct {
